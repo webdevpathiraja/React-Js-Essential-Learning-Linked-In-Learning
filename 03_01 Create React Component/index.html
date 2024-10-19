@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>React ⚛️</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      
+      // Header component
+      function Header() {
+        return(
+          <header>
+            <h1>Eve's kitchen</h1>
+          </header>
+        )
+      }
+
+      // Main content component
+      function Main() {
+        return (
+          <section>
+            <p>We serve most delicious food around</p>
+            </section>
+        )
+      }
+
+      // App component that combines Header and Main
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+          </div>
+        )
+      }
+
+      // Render the App component into the root div
+      ReactDOM.render(
+        <App />,
+      // <div>
+      //   <Header />
+      //   <Main />
+      // </div>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
